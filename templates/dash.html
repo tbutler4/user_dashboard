@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Manage</title>
+  <link rel="stylesheet" type="text/css" href="userdash.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+   <!--  <script>
+    $(document).ready(function(){
+        $("u").click(function(){
+            alert("");
+        });
+    });
+    </script> -->
+
+</head>
+<body>
+  <div class="managecontain">
+    <div class="header">
+      <h1>
+      <a href="file:///Users/Master/Documents/userdash/Manageusers.html">dashboard</a>
+        <a href="file:///Users/Master/Documents/userdash/profile.html">profile</a>
+      </h1>
+      <h2 align="right">
+      <form action='off' method="POST">
+         <button type="submit" class="btn btn-secondary btn-sm">Log Off</button>
+      </form>
+      </h2>
+    </div>
+    <div class="manage">
+      <div class="managetop">
+        <a href="file:///Users/Master/Documents/userdash/adminadd.html" class="btn btn-light" role="button">add new</a>
+      </div>
+      <div class="content">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Created at</th>
+              <th scope="col">user_level</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Ipsum</td>
+                <td>Ipsum@mail.com</td>
+                <td>Dec 29th 1999</td>
+                <td>admin</td>
+                <td>
+                <a href="file:///Users/Master/Documents/userdash/edit_profile.html">edit</a>
+                <u onclick="myFunction()">remove</u>
+
+                <script>
+                function myFunction() {
+                    confirm("confirm remove");
+                }
+                </script>
+                </td>
+              </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Josh</td>
+              <td>Josh@mail.com</td>
+              <td>Dec 29th 1999</td>
+              <td>admin</td>
+              <td>
+              <a href="file:///Users/Master/Documents/userdash/edit_profile.html">edit</a>
+                <u onclick="myFunction()">remove</u>
+
+                <script>
+                function myFunction() {
+                    confirm("confirm remove");
+                }
+                </script>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Mac</td>
+              <td>Mac@mail.com</td>
+              <td>Jan 1st 2000</td>
+              <td>normal</td>
+              <td>
+              <a href="file:///Users/Master/Documents/userdash/edit_profile.html">edit</a>
+                <u onclick="myFunction()">remove</u>
+
+                <script>
+                function myFunction() {
+                    confirm("confirm remove");
+                }
+                </script>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Lorem</td>
+              <td>Lorem @mail.com</td>
+              <td>Jan 1st 2000</td>
+              <td>normal</td>
+              <td>
+              <a href="file:///Users/Master/Documents/userdash/edit_profile.html">edit</a>
+                <u onclick="myFunction()">remove</u>
+
+                <script>
+                function myFunction() {
+                    confirm("confirm remove");
+                }
+                </script>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

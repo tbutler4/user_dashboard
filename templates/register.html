@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="registercontain">
+		<div class="bodd">
+				<div class="register">
+					Register
+					<hr>
+						<div>
+							<div class="already">
+								<form action='dashdash' method='POST'>
+							  	<div class="form-group">
+							    	<label for='email'>Email address</label>
+							    	<input type='text' class="form-control" name="email"  placeholder="Enter email">
+							    	<label for="first_name">First Name</label>
+							    	<input type="first_name" class="form-control" name="first_name" placeholder="Enter first_name">
+							    	<label for="lastname">Last Name</label>
+							    	<input type="last_name" class="form-control" name="last_name" placeholder="Enter last_name">
+							    	<label for="pword">Password</label>
+							    	<input type="password" class="form-control" name="pword" placeholder="Password">
+							    	<label for="cpword">Confirm Password</label>
+							    	<input type="passwordconfirm" class="form-control" name="cpword" placeholder="confirm password">
+							  	</div>
+							  	<button type="submit" class="btn btn-secondary btn-sm">submit</button>
+								</form>
+								{% with messages = get_flashed_messages() %}
+									{% if messages %}
+										{% for msg in messages %}
+											<p>{{ msg }}</p>
+										{% endfor %}
+									{% endif %}
+								{% endwith %}
+							</div>
+							<form action='log'>
+								Already have an account? <button type="submit" class="btn btn-secondary btn-sm">Login</button>
+							</form>
+						</div>
+				</div>	
+		</div>
+	</div>
+</body>
+</html>
